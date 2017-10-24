@@ -1,17 +1,17 @@
-'use strict';
-
 
 // Twilio Credentials
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
-const authToken = process.env.TWILIO_TOKEN;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+
 require('dotenv').load();
+
 
 // require the Twilio module and create a REST client
 const client = require('twilio')(accountSid, authToken);
 
 client.messages
   .create({
-    to: '+2064984786',
+    to: '+12064984786',
     from: '+12068667510',
     body: 'This is the ship that made the Kessel Run in fourteen parsecs?',
   })
