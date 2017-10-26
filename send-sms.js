@@ -43,4 +43,3 @@ client.messages
 //   res.send(200);
 // });
 //
-// module.exports = router;
